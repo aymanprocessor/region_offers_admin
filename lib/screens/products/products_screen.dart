@@ -3,18 +3,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/route_manager.dart';
+import 'package:region_offers_admin/provider/product_provider.dart';
 import 'package:region_offers_admin/screens/products/add_products_screen.dart';
 import '../../sevices/product_services.dart';
 import '../../models/product_model.dart';
 import 'package:get/get_utils/get_utils.dart';
 
 class ProductsScreen extends ConsumerWidget {
-  final productsstateFuture = FutureProvider<ProductModel>((ref) {
-    return getProducts();
+  final productProvider = FutureProvider<ProductModel>((ref) async {
+    final getProd = await ref.watch(ProductsProvider);
   });
   @override
   Widget build(BuildContext context, watch) {
-    final products = watch(productsstateFuture);
+    final products = watch(productProvider);
     return Scaffold(
       appBar: AppBar(
         title: Text("My Products".tr),
@@ -32,7 +33,6 @@ class ProductsScreen extends ConsumerWidget {
               //     descriptionAr: "صن شاين 200 جم",
               //     endingAt: "2020-05-13",
               //     startingAt: "1997-05-13"));
-              // context.refresh(productsstateFuture);
             },
           )
         ],
