@@ -104,10 +104,10 @@ class CData {
   String cost;
   String deliveryCost;
   String total;
-  Null needDeliveryAt;
-  Null deliveryTimeId;
+  dynamic needDeliveryAt;
+  dynamic deliveryTimeId;
   int shopId;
-  Null deliveredAt;
+  dynamic deliveredAt;
   String state;
   Client client;
   List<Offers> offers;
@@ -204,15 +204,15 @@ class Client {
   String providerId;
   String name;
   String email;
-  Null emailVerifiedAt;
+  dynamic emailVerifiedAt;
   String password;
-  Null rememberToken;
+  dynamic rememberToken;
   String phone;
   String gender;
-  Null birthday;
+  dynamic birthday;
   int regionId;
   String address;
-  Null profileImage;
+  dynamic profileImage;
   String apiToken;
   String code;
   String createdAt;
@@ -360,7 +360,7 @@ class Pivot {
   int offerId;
   String price;
   int quantity;
-  Null note;
+  dynamic note;
 
   Pivot({this.orderId, this.offerId, this.price, this.quantity, this.note});
 
@@ -394,12 +394,12 @@ class Shop {
   int takeaway;
   String minimumCharger;
   String deliveryCost;
-  Null about;
+  String about;
   String address;
   String photo;
   String availability;
   int activated;
-  Null createdAt;
+  String createdAt;
   String updatedAt;
   String photoUrl;
 

@@ -73,6 +73,7 @@ class Messages extends Translations {
           'Confirm Password': 'Confirm Password',
           'This field cannot be empty': 'This field cannot be empty',
           'Already a Member? ': 'Already a Member? ',
+          'Pick Photos': 'Product Picture'
         },
         'ar_EG': {
           'Logout': 'الخروج',
@@ -116,10 +117,10 @@ class Messages extends Translations {
           'Profile': 'صفحتي الشخصية',
           'Delivery Cost': 'تكلفة التوصيل : ',
           'Add Product': 'اضافة منتج',
-          'Title': 'الاسم',
+          'Title': 'الاسم باللغة الانجليزية',
           'Title by Arabic': 'الاسم باللغة العربية',
           'Price': 'السعر',
-          'Description': 'الوصف',
+          'Description': 'الوصف باللغة الانجليزية',
           'Description by Arabic': 'الوصف باللغة العربية',
           'Offer Time': 'مدة العرض',
           'Add': 'اضافة',
@@ -144,6 +145,7 @@ class Messages extends Translations {
           'Confirm Password': 'تأكيد كلمة السر',
           'This field cannot be empty': 'املأ هذا الحقل',
           'Already a Member? ': 'لديك حساب ؟ ',
+          'Pick Photos': 'صورة المنتج'
         }
       };
 }

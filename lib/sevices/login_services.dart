@@ -11,7 +11,7 @@ import '../common.dart';
 
 Future<LoginModel> login(String phone, String password) async {
   final http.Response response = await http.post(
-    Uri.http(serverIP, serverPath + "/shop/login"),
+    loginUri,
     headers: <String, String>{
       'Content-Type': 'application/json; charset=UTF-8',
     },

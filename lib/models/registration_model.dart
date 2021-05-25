@@ -54,7 +54,7 @@ class Data {
   String takeaway;
   String minimumCharger;
   String deliveryCost;
-  Null about;
+  dynamic about;
   String address;
   String photo;
   String availability;
